@@ -1,0 +1,52 @@
+
+/* NAVBAR */
+#header-nav{
+    margin: 0;
+}
+.navbar-brand a {
+    text-decoration: none;
+}
+.navbar-brand a:hover {
+    text-decoration: none;
+}
+
+#main-collapsed-nav ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#main-collapsed-nav li{
+    background-color: #dddddd;
+}
+/* END NAVBAR */
+
+/* HOME */
+#main-content{
+}
+
+#main-content > h1{
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 10px;
+}
+#main-content .row{
+}
+
+#main-content .row h2{
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#main-content .row > div
+{
+    background-color: grey;
+    padding: 15px;
+}
+
+
+
+/* END HOME */
+
+@media (max-width: 767px){
+}
