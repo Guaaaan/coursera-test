@@ -8,15 +8,27 @@ TooMuchCalculatorController.$inject = ["$scope"];
 function TooMuchCalculatorController($scope){
   $scope.items = "";
   $scope.result = "";
+  $scope.border_class = "black_border"
+  $scope.result_class = "black_font"
 
   $scope.calculateItems = function(){
     if ($scope.items == "")
     {
       $scope.result = "Please enter data first.";
+      $scope.border_class = "red_border";
+      $scope.result_class = "red_font";
+      return
+    }
+
+    $scope.border_class = "green_border";
+    $scope.result_class = "green_font";
+    if (isTooMuch($scope.items))
+    {
+      $scope.result = "Too much!";
     }
     else
     {
-      $scope.result = isTooMuch($scope.items);
+      $scope.result = "Enjoy!";
     }
   };
 
@@ -30,13 +42,7 @@ function TooMuchCalculatorController($scope){
           count++;
         }
     }
-    if (count > 3)
-    {
-      return "Too much!"
-    }
-    else {
-      return "Enjoy!"
-    }
+    return (count > 3);
   }
 };
 
