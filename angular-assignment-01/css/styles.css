@@ -1,0 +1,23 @@
+body
+{
+  font-size: 1.6em;
+}
+
+.red_font{
+  color: red;
+}
+.green_font{
+  color: green;
+}
+.black_font{
+  color: black;
+}
+.red_border{
+  border: 2px solid red;
+}
+.green_border{
+  border: 2px solid green;
+}
+.black_border{
+  border: 2px solid black;
+}
